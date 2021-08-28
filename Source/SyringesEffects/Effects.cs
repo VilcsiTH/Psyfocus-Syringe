@@ -16,4 +16,11 @@ namespace SyringesEffects
 			psychicEntropy.OffsetPsyfocusDirectly(1.0f);
 		}
 	}
+	public class CompUseEffect_EmptyNeuralHeat : CompUseEffect
+	{
+		public override void DoEffect(Pawn usedBy)
+		{
+			((Pawn)usedBy).psychicEntropy.TryAddEntropy(-99999f, null, true, false);
+		}
+	}
 }
