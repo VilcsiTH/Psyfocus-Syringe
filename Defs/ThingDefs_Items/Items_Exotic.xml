@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef>
+  <ThingDef ParentName="ResourceBase">
     <defName>PsyfocusSyringe</defName>
     <label>psyfocus syringe</label>
     <description>A syringe filled with a brown liquid. Fully injecting the chemical reacts with pawn's psychic powers and re-energizes them. Doesn't do anything to pawns that can't use psycasts. The syringe only takes effect if all of it is injected.</description>
