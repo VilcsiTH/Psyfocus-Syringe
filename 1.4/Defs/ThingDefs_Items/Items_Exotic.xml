@@ -28,9 +28,6 @@
       <li>ExoticMisc</li>
     </tradeTags>
     <comps>
-      <li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>TechMedicineUsed</soundOnUsed>
-      </li>
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use psyfocus syringe</useLabel>
@@ -39,9 +36,10 @@
       <li Class="CompProperties_UseEffect">
         <compClass>SyringesEffects.CompUseEffect_RefillPsyfocus</compClass>
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
+	  <li Class="CompProperties_UseEffectPlaySound">
+		<soundOnUsed>TechMedicineUsed</soundOnUsed>
       </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
     </comps>
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
@@ -76,9 +74,6 @@
       <li>ExoticMisc</li>
     </tradeTags>
     <comps>
-      <li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>TechMedicineUsed</soundOnUsed>
-      </li>
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use neural cooling syringe</useLabel>
@@ -87,9 +82,10 @@
       <li Class="CompProperties_UseEffect">
         <compClass>SyringesEffects.CompUseEffect_EmptyNeuralHeat</compClass>
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>TechMedicineUsed</soundOnUsed>
       </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
     </comps>
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
