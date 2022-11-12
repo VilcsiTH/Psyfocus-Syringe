@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>PsyfocusSyringe</defName>
+    <label>psyfocus syringe</label>
+    <description>A syringe filled with a brown liquid. Fully injecting the chemical reacts with pawn's psychic powers and re-energizes them. Doesn't do anything to pawns that can't use psycasts. The syringe only takes effect if all of it is injected.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/PsyfocusSyringe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>1800</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>TechMedicineUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use psyfocus syringe</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SyringesEffects.CompUseEffect_RefillPsyfocus</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>NeuralSyringe</defName>
+    <label>neural cooling syringe</label>
+    <description>A syringe filled with a pink liquid. Administering to a person, the chemical kicks in and completely dissipates their neural heat.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/NeuralSyringe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+      <MarketValue>1100</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>TechMedicineUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use neural cooling syringe</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SyringesEffects.CompUseEffect_EmptyNeuralHeat</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+</Defs>
